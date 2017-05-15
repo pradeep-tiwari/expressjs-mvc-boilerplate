@@ -1,0 +1,19 @@
+<!DOTYPE html>
+	<html>
+		<head>
+			<title>Error</title>
+			<style>
+				body { font-family: Arial }
+				.err { border: 1px solid #646464; border-radius: 2px; max-width: 540px; margin: 30px auto; }
+				.err h1 { margin: 0; font-size: 12px; background: #646464; padding: 3px 10px; font-weight: 100; color: #fff }
+				.err pre { overflow-x: auto; padding: 15px; margin: 0; color: #c70909; font-size: 11px }
+			</style>
+		</head>
+		<body>
+			<div class="err">
+				<h1><%=message%></h1>
+				<pre><%=error.stack%></pre>
+			</div>
+		</body>
+	</html>
+
